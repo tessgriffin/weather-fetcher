@@ -1,7 +1,16 @@
-# GitHub Codespaces ♥️ Ruby on Rails
+# Simple Rails fetching Weather Application
 
-Welcome to your shiny new Codespace running Rails! We've got everything fired up and running for you to explore Rails.
+Shows the feels like and current min/max temperature in Fahrenheit.
+Uses the api from [Open Weather Map](https://home.openweathermap.org).
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+Visit `/` or `/weather`
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+<img width="661" alt="Screen Shot 2024-11-23 at 1 07 17 PM" src="https://github.com/user-attachments/assets/e22409fc-6ee5-4423-ba44-1cf2eeefd899">
+
+Search by either the name of a city
+
+<img width="754" alt="Screen Shot 2024-11-23 at 1 07 34 PM" src="https://github.com/user-attachments/assets/289929e6-a0d7-4a38-9814-c6bac31d63ca">
+
+Or by Zip code
+
+<img width="742" alt="Screen Shot 2024-11-23 at 1 07 51 PM" src="https://github.com/user-attachments/assets/c4885742-9745-4819-8bd7-6386a6671d48">
