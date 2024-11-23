@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root "hello#index"
+  root "weather#index"
+
+  resources :weather, only: [:index]
 end

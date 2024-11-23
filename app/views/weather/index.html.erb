@@ -1,0 +1,26 @@
+<div class="App">
+  <header class="App-header">
+    <%= form_with url: weather_index_path, method: :get do |form| %>
+      <div class="fields">
+        <div class="field">
+          <label>City</label>
+          <%= form.text_field :city, id: :city %>
+        </div>
+        <div class="field">
+          <label>Zip</label>
+          <%= form.number_field :zip_code, id: :zip_code %>
+        </div>
+      </div>
+    <%= form.submit "Search" %>
+    <% end %>
+
+    <% if @weather_data.present? %>
+      <p>It currently feels like <%= @weather_data["feels_like"] %>°F</p>
+      <p>The current max is <%= @weather_data["temp_max"] %>°F</p>
+      <p>The current min is <%= @weather_data["temp_min"] %>°F</p>
+      <% if @cached.present? %>
+        <p>This value was fetched from the cache.</p>
+      <% end %>
+    <% end %>
+  </header>
+</div>
